@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap');
+
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header-section{
+    height: 100px;
+    position: fixed;
+    width: 100%;
+}
+.header-section .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-menu .menu{
+    display: flex;
+}
+.header-menu .menu li a {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    font-size: 13px;
+    padding: 14px 30px;
+}
+.header-menu .menu li:last-child a{
+    padding-right: 0;
+}
+/* --------------Bannar-section----- */
+.bannar-section{
+    background-image: url(./img/backgroundpic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 254px;
+    padding-bottom: 160px;
+}
+.bannar-section .container h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 65px;
+    line-height: 69px;
+    text-transform: uppercase;
+    
+}
+.bannar-section .container p{
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 42px;
+    margin-bottom: 80px;
+    padding: 0 70px;
+}
+.bannar-section .container a{
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    padding: 20px 46px;
+    background-color: #e84545;
+    border-radius: 2px;
+}
+.bannar-section .container{
+    text-align: center;
+    padding: 0 60px;
+}
+
+
+/* ----- Service-section------ */
+.service{
+    padding: 120px 0;
+}
+.service .container{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 68px;
+    column-gap: 5%;
+}
+
+.service .container .service-item{
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 27px;
+}
+.service .container .service-item h3{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    margin-top: 36px;
+    margin-bottom: 26px;
+}
+.service .container .service-item p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+/* <!-- ------------Image-Section--------- --> */
+
+
+.img-gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   column-gap: 1px;
+   row-gap: 1px;
+}
+.img-gallery .img-items{
+    max-width: calc(25% - 1px);
+    position: relative;
+    cursor: pointer;
+}
+.img-gallery .img-items img{
+    width: 100%;
+    height: 100%;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+.img-gallery .img-items:hover .overlay{
+    background-color: rgba(232, 69, 69, 0.7);
+
+}
+.img-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    opacity: 0;
+    transition: 0.4s;
+}
+.img-text h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.img-text p{
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.img-gallery .img-items:hover .img-text{
+    opacity: 1;
+}
+
+
+/* ----------person-section------------ */
+
+
+
+.person-section .container{
+    padding-top: 103px;
+    padding-bottom: 100px;
+    display: flex;
+}
+.person-section h4{
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: #2d3033;
+    margin-top: 28px;
+}
+.person-section p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #e84545;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+.person-section .p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6c7279;
+    padding-right: 30px;
+}
+.person-section .icons{
+    display: flex;
+}
+.person-section .icon {
+    border: #2d3033;
+    width: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 1px solid #c6cacc;
+}
+.icons .twitter{
+    margin: 0 5px;
+}
+
+
+/* -----------advice-section---------- */
+
+.advice-section{
+    display: flex;
+    width: 100%;
+}
+.advice-section .woman-photo img{
+    width: 100%;
+    height: 100%;
+}
+.advice-section .woman-photo{
+    max-width: 50%;
+}
+.advice-text{
+    position: relative;
+    width: 50%;
+    background-color: #53354a;
+ }
+.advice-section .advice-text p{
+    position: absolute;
+    top: 111px;
+    left: 85px;
+    font-style: italic;
+    font-size: 36px;
+    display: inline-block;
+    
+}
+.advice-section .advice-text .secend-p{
+    position: absolute;
+    top: 260px;
+    left: 85px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    
+}
+.slide-show{
+    position: absolute;
+    top: 300px;
+    left: 279px;
+    height: 31px;
+    width: 110px;
+    background-color:#53354a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slide-show .div{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #755d6e;
+}
+.slide-show .color{
+    background-color: #fff;
+}
+
+
+/* -----------download-section----- */
+
+
+.download-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+.download-section .heading-text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    color: #8a8b8c;
+}
+.download-section  p{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 43px;
+    color: #2d3033;
+}
+.download-section .btn a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 19px 84px;
+    background-color: #e84545;
+    color: #fff;
+}
+.download-section .btn {
+    padding-bottom: 100px;
+}
